@@ -8,10 +8,15 @@
 
 alert("Are you ready to calculate the Damage per Second of your Weapon?");
 
-var Minimum Weapon Damage;
+var MinimumWeaponDamage;
 
-var Maximum Weapon Daamge;
+var MaximumWeaponDamage;
 
-var Weapon Speed;
+var WeaponSpeed;
 
-prompt Minimum Weapon Damage = ("Please enter the minimum damage of your weapon: ")
+MinimumWeaponDamage = prompt("Please enter the minimum damage of your weapon: ");
+
+MaximumWeaponDamage = prompt("Please enter the maximum damage of your weapon: ");
+
+WeaponSpeed = prompt("Please enter the speed of your weapon: ");
+
