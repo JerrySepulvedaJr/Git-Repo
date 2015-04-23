@@ -1,1 +1,68 @@
+/**
+ * Created by Jerry Sepulveda Jr on 4/23/15.
+ * SDI Project #3
+ * Conditionals_Assignment
+ */
 
+alert ("Are you ready to check on the Surf Conditions?");
+
+
+var MinimumWaveHeight; //setting up Minimum Wave Height var
+
+var MaximumWaveHeight; //setting up Maximum Wave Height var
+
+var SharksSighted;  //setting up Sharks Sighted var
+
+// I'm setting up my prompts so I can get the users data.
+
+MinimumWaveHeight = prompt("Please enter the minimum wave height at Banzai Pipeline: ");  //setting up min wave height prompt
+
+MaximumWaveHeight = prompt("Please enter the maximum wave height at Banzai Pipeline: ");  //setting up max wave height prompt
+
+SharksSighted = prompt("Please enter the amount of sharks sighted: "); //setting up the amount of sharks sighted prompt
+
+// I'm using the console.log to send the collected data back to the user.
+
+console.log ("You entered the following minimum wave height: "+ MinimumWaveHeight + ".");  //console log with min wave height data
+
+console.log ("You entered the following maximum wave height: "+ MaximumWaveHeight + ".");  //console log with max wave height data
+
+console.log ("You entered the following amount of sharks sighted: "+ SharksSighted + ".");  // console log with sharks sighted data
+
+//  The Ideal Surf Conditions formula is MaximumWaveHeight - MinimumWaveHeight.
+
+var IdealSurfConditions; //setting up the Ideal Surf Conditions Variable.
+
+IdealSurfConditions = (MinimumWaveHeight + MaximumWaveHeight);//setting up Ideal Surf Conditions math.
+
+console.log (IdealSurfConditions); //setting up console log to display Ideal Surf Condition Math.
+
+alert ("The Ideal Surf Condition Numerical Factor is")  //setting up alert to display message to user
+
+alert (IdealSurfConditions); //setting up alert to display Ideal Surf Conditions math
+
+var ContestBudget = 999; // Setting up the Contest Budget amount variable.
+
+var PrizeMoney = 500;  // Setting up the prize money amount variable.
+
+var LifeGuardsPay = 200;  // Setting up the Life guard pay budget variable.
+
+//  IF the Life Guards pay and the Prize money come out totaling more than $800, There will be no event as we are over budget.
+
+
+if (LifeGuardsPay && PrizeMoney < 800){  //setting up Logical operator && to determine if there is less than 800.
+    console.log ("We have enough money to hold the event!"); //Setting up console log to display true or false
+}else{                             //Setting up else if false
+    console.log ("There will be no event as we are over budget.");  // setting up console log to print false message.
+}  //End of statement curly bracket.
+
+if (SharksSighted <= 2){   //  Setting up IF else If statement Sharks sighted less than or equal to 2
+
+    alert("The surf contest can go on!");  //setting up alert to display The Surf Contest can go on!
+}else if(SharksSighted == 3){  //Else if SharksSighted is equal to 3
+
+    alert("Additional lifeguards will be utilized to protect the surfers.");  //Setting up alert to display Additional lifeguards will be utilized.
+}else{  //end of curly braces.
+
+    alert('There are too many sharks to ensure the safety of the surfers, the event is called off.');  //There are too many sharks to ensure the safety of the surfers.
+}
